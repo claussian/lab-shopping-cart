@@ -15,6 +15,86 @@
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h1>Shopping Cart</h1>
+      </div>
+    </div>
+  </div>
+    <div class="container item-list">
+      <div class="row row-item">
+        <div class="col-md-3 title">
+         <h4>Item</h4>
+        </div>
+        <div class="col-md-3 title">
+          <h4>Price per item</h4>
+        </div>
+        <div class="col-md-3 title">
+          <h4>Quantity</h4>
+        </div>
+        <div class="col-md-3 title">
+          <h4>Total Price</h4>
+        </div>
+      </div>
+      <div class="row row-item">
+        <div class="col-md-3 name">
+         <p>Salmon</p>
+        </div>
+        <div class="col-md-3 price">
+          <p>$ 3.50</p>
+        </div>
+        <div class="col-md-3 qty">
+          <input type="number" name="quantity" class="qty-field" value=0>
+        </div>
+        <div class="col-md-3 calc-price">
+        </div>
+      </div>
+      <div class="row row-item">
+        <div class="col-md-3 name">
+         <p>Eggs (1 dozen)</p>
+        </div>
+        <div class="col-md-3 price">
+          <p>$ 2.00</p>
+        </div>
+        <div class="col-md-3 qty">
+          <input type="number" name="quantity" class="qty-field" value=0>
+        </div>
+        <div class="col-md-3 calc-price">
+        </div>
+      </div>
+      <div class="row row-item">
+        <div class="col-md-3 name">
+         Bread
+        </div>
+        <div class="col-md-3 price">
+          <p>$ 1.75</p>
+        </div>
+        <div class="col-md-3 qty">
+          <input type="number" name="quantity" class="qty-field" value=0>
+        </div>
+        <div class="col-md-3 calc-price">
+        </div>
+      </div>
+    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 item">
+            <label for="name-field">New Item</label>
+            <input type="text" name="name" id="name-field">
+          </div>
+          <div class="col-md-3 item">
+            <label for="price-field">Price</label>
+            <input type="number" name="price" id="price-field" value=0>
+          </div>
+          <div class="col-md-3 item">
+            <button type="button" class="add-item">Add New Item</button>
+          </div>
+          <div class="col-md-3 item">
+            <button type="button" class="btn btn-success calculate-price">Calculate price</button>
+          </div>
+        </div>
+      </div>
     
   </body>
 </html>

@@ -1,0 +1,26 @@
+.container {
+	background-color: salmon;
+}
+
+.item, .title {
+	background-color: LightBlue;
+	line-height: 2;
+	padding: 10px;
+	text-align: center;
+}
+
+input .qty-field{
+	max-width: 40%;
+	position: center;
+}
+
+.name, .price, .qty, .calc-price {
+	background-color: LightYellow;
+	text-align: center;
+	line-height: 2;
+	padding: 5px;
+	position: relative;
+} 
+
+button.calculate-price{
+}
