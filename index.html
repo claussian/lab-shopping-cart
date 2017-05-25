@@ -15,26 +15,30 @@
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
+  <!-- Start of header container -->
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
-        <h1>Shopping Cart</h1>
+      <div class="col-md-6">
+        <h1>Salmon and Carpets</h1>
       </div>
     </div>
   </div>
+  <!-- Start of product container -->
     <div class="container item-list">
-      <div class="row row-item">
-        <div class="col-md-3 title">
+      <div class="row title">
+        <div class="col-md-3">
          <h4>Item</h4>
         </div>
-        <div class="col-md-3 title">
+        <div class="col-md-3">
           <h4>Price per item</h4>
         </div>
-        <div class="col-md-3 title">
+        <div class="col-md-2">
           <h4>Quantity</h4>
         </div>
-        <div class="col-md-3 title">
+        <div class="col-md-3">
           <h4>Total Price</h4>
+        </div>
+        <div class="col-md-1">
         </div>
       </div>
       <div class="row row-item">
@@ -44,57 +48,95 @@
         <div class="col-md-3 price">
           <p>$ 3.50</p>
         </div>
-        <div class="col-md-3 qty">
-          <input type="number" name="quantity" class="qty-field" value=0>
+        <div class="col-md-2 qty">
+          <input type="number" name="quantity" class="qty-field" value="0" min="0">
         </div>
         <div class="col-md-3 calc-price">
+        </div>
+        <div class="col-md-1 remove">
+          <button class="btn btn-danger btn-remove">&#10005;</button>
         </div>
       </div>
       <div class="row row-item">
         <div class="col-md-3 name">
-         <p>Eggs (1 dozen)</p>
+         <p>Eggs</p>
         </div>
         <div class="col-md-3 price">
           <p>$ 2.00</p>
         </div>
-        <div class="col-md-3 qty">
-          <input type="number" name="quantity" class="qty-field" value=0>
+        <div class="col-md-2 qty">
+          <input type="number" name="quantity" class="qty-field" value="0" min="0">
         </div>
         <div class="col-md-3 calc-price">
+        </div>
+        <div class="col-md-1 remove">
+          <button class="btn btn-danger btn-remove">&#10005;</button>
         </div>
       </div>
       <div class="row row-item">
         <div class="col-md-3 name">
-         Bread
+         Mortazavy fine carpet
         </div>
         <div class="col-md-3 price">
-          <p>$ 1.75</p>
+          <p>$ 11750.00</p>
         </div>
-        <div class="col-md-3 qty">
-          <input type="number" name="quantity" class="qty-field" value=0>
+        <div class="col-md-2 qty">
+          <input type="number" name="quantity" class="qty-field" value="0" min="0">
         </div>
         <div class="col-md-3 calc-price">
         </div>
+        <div class="col-md-1 remove">
+          <button class="btn btn-danger btn-remove">&#10005;</button>
+        </div>
       </div>
     </div>
-      <div class="container">
-        <div class="row">
+    <!-- Start of summary container -->
+      <div class="container summarylist">
+        <div class="row summary">
           <div class="col-md-3 item">
             <label for="name-field">New Item</label>
-            <input type="text" name="name" id="name-field">
+            <input type="text" name="name" id="name-field" placeholder="Add new item">
           </div>
           <div class="col-md-3 item">
             <label for="price-field">Price</label>
-            <input type="number" name="price" id="price-field" value=0>
+            <input type="number" name="price" id="price-field" placeholder="0.00" min="0">
           </div>
-          <div class="col-md-3 item">
-            <button type="button" class="add-item">Add New Item</button>
+          <div class="col-md-2 item">
+            <button type="button" class="btn btn-basicadd-item">Add New Item</button>
           </div>
           <div class="col-md-3 item">
             <button type="button" class="btn btn-success calculate-price">Calculate price</button>
           </div>
+          <div class="col-md-1">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 price-header">
+            <h3>Grand Total</h3>
+              <div class="col-md-12 total-price">
+                <h2>$ 0.00</h2>
+              </div>
         </div>
       </div>
+    </div>
     
+    <script type="text/template" id="row-item-tpl">
+      <div class="row row-item">
+        <div class="col-md-3 name">
+         <p>{{name}}</p>
+        </div>
+        <div class="col-md-3 price">
+          <p>{{price}}</p>
+        </div>
+        <div class="col-md-2 qty">
+          <input type="number" name="quantity" class="qty-field" value="0" min="0">
+        </div>
+        <div class="col-md-3 calc-price">
+        </div>
+        <div class="col-md-1 remove">
+          <button class="btn btn-danger btn-remove">&#10005;</button>
+        </div>
+      </div>
+    </script>
   </body>
 </html>

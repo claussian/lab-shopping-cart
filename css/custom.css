@@ -1,26 +1,68 @@
-.container {
-	background-color: salmon;
+.row-item {
+	background-color: rgb(213,235,225);
+	padding: 10px;
+	position: relative;
 }
 
-.item, .title {
-	background-color: LightBlue;
+.row-item:hover {
+	background-color: rgba(255,238,173,0.3);
+}
+
+.row-warning {
+	position: absolute;
+	padding: 5px;
+	width: 100%;
+	background-color: rgba(1,1,1,0.5);
+	top: 0;
+	left: 0;
+	text-align: center;
+	color: white;
+}
+
+.title {
+	background-color: rgb(150,206,180);
 	line-height: 2;
 	padding: 10px;
 	text-align: center;
 }
 
-input .qty-field{
-	max-width: 40%;
+.summary {
+	background-color: white;
+	line-height: 2;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	border-top: 1px;
+	border-bottom: 1px;
+
+}
+
+input.qty-field{
+	max-width: 20%;
 	position: center;
 }
 
 .name, .price, .qty, .calc-price {
-	background-color: LightYellow;
+	background-color: rgba(0,0,0,0);
 	text-align: center;
 	line-height: 2;
-	padding: 5px;
-	position: relative;
 } 
 
-button.calculate-price{
+.total-price h2 {
+	font-size: 55px;
+	text-align: center;
+}
+
+.price-header h3 {
+	text-align: center;
+}
+
+
+
+.remove {
+	display: none;
+}
+
+.row-item:hover .remove {
+	display: block;
 }
